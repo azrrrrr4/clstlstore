@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CelestialStudios</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    
+    <header>
+        <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
+
+        <ul class="navmenu">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="product.html">Produk</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="kontak.html">Kontak Kami</a></li>
+            <li><a href="ulasan.html">Ulasan</a></li>
+        </ul>
+
+        <div class="nav-icon">
+            <a href="#"><i class='bx bx-search-alt' style="display: none;"></i></a>
+            <a href="login.html"><i class='bx bx-user'></i></a>
+            <a href="cart.html" class="cart-link"><i class='bx bx-cart-alt'></i></a>
+          
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="main-home">
+        <div class="main-text">
+            <h5>Koleksi Terbaru</h5>
+            <h1>CLSTL Studios<br>New 2025</h1>
+            <p>Promo Hingga 50%, Beli Sekarang!</p>
+
+            <a href="product.html" class="main-btn">Belanja Sekarang<i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+    </section>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button"><i class='bx bxs-right-top-arrow-circle'></i></span>
+        <h2 id="modal-title"></h2>
+        <div id="modal-images" class="modal-images"></div>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    
+    <section class="trending-product" id="trending">
+        <div class="center-text">
+            <h2>Produk<span>Terlaris</span></h2>
+        </div>
+
+      <div class="pro">
+          <div class="product-item" data-id="1" data-name="TSHIRT WITH YOU" data-price="87000" data-image="img/pr1.jpg">
+              <div class="row">
+                <img src="img/pr1.jpg" alt="TSHIRT WITH YOU" class="product-image">
+                <div class="product-text">
+                  <h5>Promo</h5>
+                </div>
+                <div class="heart-icon">
+                  <button class="add-to-cart"><i class='bx bxs-cart-add'></i></button>
+                  <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+                <div class="ratting">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                  <h4 class="product-title">TSHIRT WITH YOU</h4>
+                  <p class="product-price" data-price="87000">Rp.87.000</p>
+                  <p class="product-description" style="display: none;">
+                    "Kaos ini adalah pilihan sempurna dengan bahan premium berkualitas tinggi, desain modern yang mengikuti tren, nyaman, stylish, dan tahan lama."
+                  </p>
+                  <img src="img/pr1.jpg" alt="Gambar 1" class="product-gallery" style="display: none;">
+                  <img src="img/prbk1.jpg" alt="Gambar 2" class="product-gallery" style="display: none;">
+                </div>
+              </div>
+          </div>
+            
+
+          <div class="product-item" data-id="2" data-name="TSHIRT PEACEFUL MIND" data-price="87000" data-image="img/pr2.jpg">
+              <div class="row">
+                <img src="img/pr2.jpg" alt="TSHIRT PEACEFUL MIND" class="product-image">
+                <div class="product-text">
+                  <h5>Promo</h5>
+                </div>
+                <div class="heart-icon">
+                  <button class="add-to-cart"><i class='bx bxs-cart-add'></i></button>
+                  <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+                <div class="ratting">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                  <h4 class="product-title">TSHIRT PEACEFUL MIND</h4>
+                  <p class="product-price" data-price="87000">Rp.87.000</p>
+                  <p class="product-description" style="display: none;">
+                    "Kaos ini adalah pilihan sempurna dengan bahan premium berkualitas tinggi, desain modern yang mengikuti tren, nyaman, stylish, dan tahan lama."
+                  </p>
+                  <img src="img/pr2.jpg" alt="Gambar 1" class="product-gallery" style="display: none;">
+                  <img src="img/prbk2.jpg" alt="Gambar 2" class="product-gallery" style="display: none;">
+                </div>
+              </div>
+          </div>
+
+          <div class="product-item" data-id="3" data-name="TSHIRT LOST IN THOUGHT" data-price="87000" data-image="img/pr3.jpg">
+              <div class="row">
+                <img src="img/pr3.jpg" alt="TSHIRT LOST IN THOUGHT" class="product-image">
+                <div class="product-text">
+                  <h5>Promo</h5>
+                </div>
+                <div class="heart-icon">
+                  <button class="add-to-cart"><i class='bx bxs-cart-add'></i></button>
+                  <button class="buy-now-button">Beli Sekarang</button>
+                </div>
+                <div class="ratting">
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star'></i>
+                  <i class='bx bxs-star-half'></i>
+                </div>
+                <div class="price">
+                  <h4 class="product-title">TSHIRT LOST IN THOUGHT</h4>
+                  <p class="product-price" data-price="87000">Rp.87.000</p>
+                  <p class="product-description" style="display: none;">
+                    "Kaos ini adalah pilihan sempurna dengan bahan premium berkualitas tinggi, desain modern yang mengikuti tren, nyaman, stylish, dan tahan lama."
+                  </p>
+                  <img src="img/pr3.jpg" alt="Gambar 1" class="product-gallery" style="display: none;">
+                  <img src="img/prbk3.jpg" alt="Gambar 2" class="product-gallery" style="display: none;">
+                </div>
+              </div>
+          </div>
+      </div>
+
+    </section>
+
+    <section class="client-reviews">
+        <div class="reviews">
+            <h3>Profil Owner</h3>
+            <img src="img/imageteam2.jpg" alt="">
+            <p>Halo! Saya adalah seorang mahasiswa yang tengah mengejar impian di dunia fashion dengan membangun brand clothing sendiri.
+                <br> Berfokus pada desain yang fresh dan berkarakter, saya berharap untuk memberikan sentuhan unik pada setiap koleksi yang saya buat. <br> 
+                Dalam perjalanan ini, saya belajar banyak tentang industri fashion, branding, dan kreativitas, sambil tetap menjaga semangat untuk terus berkembang. <br> 
+                Terima kasih telah mengikuti perjalanan saya—stay tuned untuk update terbaru dari brand saya!</p>
+            <h2>Azri Alfiyan</h2>
+            <p>Owner Business</p>
+        </div>
+    </section>
+
+    <section class="help-section">
+      <div class="slider-wrapper">
+        <div class="slider-container">
+
+          <div class="help-slide">
+            <img src="img/banner3.png" alt="Help Image 1" class="help-image">
+            <div class="help-content">
+              <h3>Butuh Bantuan Kami?</h3>
+              <p>Jangan ragu untuk menghubungi kami jika Anda membutuhkan informasi lebih lanjut atau memiliki pertanyaan. Tim kami siap membantu Anda!</p>
+              <a href="kontak.html" class="btn-help">Hubungi Kami</a>
+            </div>
+          </div>
+
+          <div class="help-slide">
+            <img src="img/banner4.png" alt="Help Image 2" class="help-image">
+            <div class="help-content">
+              <h3>Promo Eksklusif</h3>
+              <p>Nikmati diskon hingga 50% untuk pembelian pertama Anda. Jangan lewatkan kesempatan ini!</p>
+              <a href="product.html" class="btn-help">Lihat Promo</a>
+            </div>
+          </div>
+
+          <div class="help-slide">
+            <img src="img/banner2.jpg" alt="Help Image 3" class="help-image">
+            <div class="help-content">
+              <h3>Segera Hadir!</h3>
+              <p>Nantikan produk terbaru yang akan hadir di bulan ini!</p>
+              <a href="tentang.html" class="btn-help">Kenali Tim</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>      
+
+    <section class="update-news">
+        <div class="up-center-text">
+            <h2>Berita Terkini</h2>
+        </div>
+
+        <div class="update-cart">
+            <div class="cart">
+                <img src="img/imagebl6.jpg">
+                <h5>Rabu (22/01/2025)</h5>
+                <h4>Pemberhentian Anggota DPRD Kabupaten/Kota<br>Akan Menjadi Objek Sengketa di Pengadilan Tata Usaha Negara</h4>
+                <p>KUNINGAN (MASS) – Dalam Kitab Undang Hukum Pidana (Wetboek van srafrecht ) Buku II Bab VII kejahatan yang hanya boleh dituntut atas Pengaduan diantaranya Pasal 284 KUHP (overspel) artinya hubungan seksual yang dilakukan oleh orang yang sudah menikah dengan orang yang bukan pasangannya. Overspel juga dikenal sebagai</p>
+                <a href="https://kuninganmass.com/pemberhentian-anggota-dprd-kabupaten-kota-akan-menjadi-objek-sengketa-di-pengadilan-tata-usaha-negara/"><h6>lanjut baca....</h6></a>
+            </div>
+
+            <div class="cart">
+                <img src="img/imagebl7.webp" alt="">
+                <h5>Rabu (22/01/2025)</h5>
+                <h4>Mengatasi Krisis Membaca di Kalangan Pelajar:<br>Tanggung Jawab Siapa?</h4>
+                <p>KUNINGAN (MASS) – Dalam beberapa tahun terakhir, perhatian terhadap krisis membaca di kalangan pelajar semakin meningkat. Data dari Programme for International Student Assessment (PISA) menunjukkan bahwa kemampuan literasi membaca pelajar Indonesia masih berada di</p>
+                <a href="https://kuninganmass.com/mengatasi-krisis-membaca-di-kalangan-pelajar-tanggung-jawab-siapa/"><h6>lanjut baca....</h6></a>
+            </div>
+
+            <div class="cart">
+                <img src="img/imagebl8.webp" alt="">
+                <h5>Selasa (21/01/2025)</h5>
+                <h4>Tak Terlihat Selama Dua Hari, Warga Mandalajaya<br>Ditemukan Tewas di Rumah, Diduga Serangan Jantung</h4>
+                <p>Menurut keterangan dari keluarga korban, Dodi, jasad korban pertama kali ditemukan oleh Bu Eni, Mi Engkus dan Mang Walim, yang berencana menjenguknya, karena selama dua hari, korban tidak terlihat oleh</p>
+                <a href="https://kuninganmass.com/tak-terlihat-selama-dua-hari-warga-mandalajaya-ditemukan-tewas-di-rumah-diduga-serangan-jantung/"><h6>lanjut baca....</h6></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+        <div class="contact-info">
+            <div class="first-info">
+                <img src="img/logo.png" alt="Logo Terbaru CelestialStudios">
+                <a href="https://maps.app.goo.gl/M11372GNbPx1PKqWA"><p>Kuningan, Jawa Barat, <br> Indonesia 45562</p></a>
+                <a href="tel:+6287776714687"><p>087776714687</p></a>
+                <a href="mailto:azrialfiyan22@gmail.com"><p>azrialfiyan22@gmail.com</p></a>
+
+                <div class="social-icon">
+                    <a href="https://www.instagram.com/clstl.id/"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></a>
+                </div>
+            </div>
+
+            <div class="second-info">
+                <h4>Dukungan</h4>
+                <a href="kontak.html"><p>Kontak Kami</p></a>
+                <a href="caraorder.html"><p>Cara Order</p></a>
+                <a href="sizechart.html"><p>Size Chart</p></a>
+                <a href="privasi.html"><p>Privasi</p></a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="end-text">
+        <p>Copyright © @2024.<br>All Right Reserved. Designed By Azri Alfiyan</p>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
